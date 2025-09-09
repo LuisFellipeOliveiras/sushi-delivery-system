@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenith Delivery | Culinária Japonesa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sawarabi+Mincho&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1 class="logo" aria-label="Zenith Delivery">🍣 Zenith Delivery</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Cardápio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#historia">História</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon" aria-label="Abrir carrinho">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cartCount" class="badge">0</span>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="banner">
+      <div class="overlay"></div>
+      <div class="sakura-container"></div>
+      <div class="sushi-container"></div>
+      <div class="banner-content">
+        <h1>O melhor da culinária japonesa na sua casa</h1>
+        <p>Tradição, sabor e frescor direto do Japão para você!</p>
+        <a href="#menu" class="btn">Ver Cardápio</a>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <h2>Cardápio</h2>
+      <div class="produtos">
+        <article class="card" role="region" aria-label="Sushi Especial">
+          <img src="comida2.jpg" alt="Sushi Especial" />
+          <h3>Sushi Especial</h3>
+          <p>R$ 25,00</p>
+          <button data-name="Sushi Especial" data-price="25" aria-label="Adicionar Sushi Especial ao carrinho">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="card" role="region" aria-label="Yakisoba">
+          <img src="comida4.jpg" alt="Yakisoba" />
+          <h3>Yakisoba</h3>
+          <p>R$ 30,00</p>
+          <button data-name="Yakisoba" data-price="30" aria-label="Adicionar Yakisoba ao carrinho">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="card" role="region" aria-label="Tempurá de Camarão">
+          <img src="comida5.jpg" alt="Tempurá de Camarão" />
+          <h3>Tempurá de Camarão</h3>
+          <p>R$ 28,00</p>
+          <button data-name="Tempurá de Camarão" data-price="28" aria-label="Adicionar Tempurá de Camarão ao carrinho">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="card" role="region" aria-label="Sashimi Premium">
+          <img src="comida6.jpg" alt="Sashimi Premium" />
+          <h3>Sashimi Premium</h3>
+          <p>R$ 40,00</p>
+          <button data-name="Sashimi Premium" data-price="40" aria-label="Adicionar Sashimi Premium ao carrinho">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Novos itens adicionados -->
+
+        <article class="card" role="region" aria-label="Temaki de Salmão">
+          <img src="temaki_salmao.jpg" alt="Temaki de Salmão" />
+          <h3>Temaki de Salmão</h3>
+          <p>R$ 22,00</p>
+          <button data-name="Temaki de Salmão" data-price="22" aria-label="Adicionar Temaki de Salmão ao carrinho">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="card" role="region" aria-label="Uramaki Califórnia">
+          <img src="uramaki_california.jpg" alt="Uramaki Califórnia" />
+          <h3>Uramaki Califórnia</h3>
+          <p>R$ 35,00</p>
+          <button data-name="Uramaki Califórnia" data-price="35" aria-label="Adicionar Uramaki Califórnia ao carrinho">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="card" role="region" aria-label="Harumaki Vegetariano">
+          <img src="harumaki_vegetariano.jpg" alt="Harumaki Vegetariano" />
+          <h3>Harumaki Vegetariano</h3>
+          <p>R$ 18,00</p>
+          <button data-name="Harumaki Vegetariano" data-price="18" aria-label="Adicionar Harumaki Vegetariano ao carrinho">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="card" role="region" aria-label="Gyoza de Porco">
+          <img src="gyoza_porco.jpg" alt="Gyoza de Porco" />
+          <h3>Gyoza de Porco</h3>
+          <p>R$ 27,00</p>
+          <button data-name="Gyoza de Porco" data-price="27" aria-label="Adicionar Gyoza de Porco ao carrinho">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="card" role="region" aria-label="Missoshiru (Sopa de Missô)">
+          <img src="missoshiru.jpg" alt="Missoshiru (Sopa de Missô)" />
+          <h3>Missoshiru (Sopa de Missô)</h3>
+          <p>R$ 12,00</p>
+          <button data-name="Missoshiru" data-price="12" aria-label="Adicionar Missoshiru ao carrinho">Adicionar ao Carrinho</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2>Sobre Nós</h2>
+      <p>O Zenith Delivery nasceu da paixão pela culinária japonesa. Nosso objetivo é trazer a tradição do Japão com frescor, sabor e excelência, entregando pratos que contam histórias a cada mordida.</p>
+    </section>
+
+    <section id="historia" class="historia">
+      <h2>História da Culinária Japonesa</h2>
+      <p>O sushi e sashimi surgiram há séculos no Japão, com tradição de frescor e apresentação impecável. Cada prato conta uma história, do arroz temperado ao peixe cuidadosamente selecionado, unindo arte e sabor.</p>
+    </section>
+
+  </main>
+
+  <aside id="carrinho" class="carrinho-fechado">
+    <h2>Seu Carrinho</h2>
+    <ul id="itens"></ul>
+    <div class="carrinho-info">
+      <p>Total: R$ <span id="total">0,00</span></p>
+    </div>
+    <div class="carrinho-actions">
+      <button id="finalizarBtn">Finalizar Pedido</button>
+      <button id="esvaziarBtn">Esvaziar</button>
+    </div>
+  </aside>
+
+  <div id="telaPagamento" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" aria-label="Fechar tela de pagamento">&times;</span>
+      <h2>Pagamento</h2>
+      <p>Total do pedido: R$ <span id="totalPagamento">0,00</span></p>
+      <div class="formas-pagamento">
+        <button data-payment="PIX">PIX</button>
+        <button data-payment="Cartão">Cartão</button>
+        <button data-payment="Na Entrega">Na Entrega</button>
+      </div>
+      <div id="mensagemPagamento"></div>
+    </div>
+  </div>
+
+  <footer id="contato">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 Zenith Delivery | Feito com ❤ por Zenith</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
